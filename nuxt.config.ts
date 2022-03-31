@@ -2,5 +2,10 @@ import { defineNuxtConfig } from 'nuxt3'
 
 // https://v3.nuxtjs.org/docs/directory-structure/nuxt.config
 export default defineNuxtConfig({
-
+  buildModules: ['nuxt-windicss'],
+  css: ['~~/assets/font/Poppins/index.css'],
+  typescript: {
+    strict: true,
+  },
+  ssr: false,
 })
